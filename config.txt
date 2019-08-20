@@ -1,0 +1,83 @@
+//:			this is a comment
+//:			do not change the string before colon :
+//:			you can customise integer values after :   but these have to be integer values
+
+//:			result is auto saved in the result fold in the format of 
+//:			autosave_XXXX_year-month-day_hour-minute-second.csv
+
+//:			To pause the test, press 'SPACE' key on the keyboard
+//:			To resume the test, press 'ENTER' key on the keyboard
+
+//:			Please make sure you use 100% zoom. Do not change the scale, because it affects the eccentricity calculation. 
+
+
+name: 			Crazy Search v3.0
+
+//:			[param]
+//:			test can have 3 modes: complete random "cr", or fix random "fr"
+test mode: 		cr
+
+//:			[param]
+//:			when test mode = fix random "fr", test can have different series (n>=0).
+//:			Each serial (eg series = 1) has same stimuli but they are presented in different orders.
+//:			So that you can compare results between different participants.
+//:			If you want to compare performance within participants, you can compare results when series = 1, 2, 3 etc.. or simply use "complete random" mode.
+test series: 		1
+
+
+//:			[param]
+//:			number of rows or columns in a screen
+//:			have to be odd rows and odd columns, because centre image is reference stimulus
+number of rows: 	7
+number of columns:	9
+
+
+//:			[param]
+//: 			change the screen resolution according to your screen specifications
+screen width:		2736
+screen height:		1824
+
+
+
+//:			[param]
+//:			Screen dot pitch, ie: distance between two adjacent points on the physical screen
+//:			This is used to calculate 'eccentricity'.
+//:			unit is mm
+dot pitch:		0.28
+
+//:			[param]
+//:			participant distance to the physical screen
+//:			This is used to calculate 'eccentricity'.
+//:			unit is mm
+viewing distance:	500
+
+
+
+//:			[param]
+//:			display cursor? if yes, then you can simulate/test the test on a non-touch-monitor
+display cursor:		No
+
+
+
+//:			[param]
+//: 			locations and repeated number for the location.
+//:			If a location is not explicitely specified, it uses default value, which is 1.
+//:			Total number of locations  = 'number of rows' x 'number of columns'
+//:			centre location is where the reference stim locates.
+//:			location starts from 0. it is the topleft stimulus on the screen.
+
+//:			you can delete the individual location rows
+//:			you can also explicitly set an individual location to 0 or someother number
+
+//:			If you prefer to use row number and column number for locations, you can 
+//:			convert them, simply use 
+//:				row number = location/number of columns; (the integer part)
+//:				col number = location - row number * number of columns;
+
+ 
+//:			So it will not be tested even you explicitely set a value for it
+
+
+//:			[param]
+
+
